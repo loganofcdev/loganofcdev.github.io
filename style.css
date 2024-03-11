@@ -274,13 +274,4 @@ section p {
     z-index: 1px	  
 }
 
-a {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
 
-img {
-  width: 35px; /* Adjust the size as needed */
-  height: auto; /* Maintain aspect ratio */
-}
