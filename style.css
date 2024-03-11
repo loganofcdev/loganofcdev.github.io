@@ -96,6 +96,52 @@ nav a:hover {
     background-color: #2c3e50;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10vw;
+  align-items: center;
+  text-align: center;
+}
+
+.container h1 {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--third-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 0;
+  color: transparent;
+  font-size: 68px;
+}
+
+.photo-gallery a {
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.photo-gallery a:hover {
+  transform: scale(1.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+photo-gallery {
+  display: flex; 
+}
+
+.photo-gallery img {
+  width: 25%; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 section {
   padding: 2rem;
   background-color: #262626;
