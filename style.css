@@ -168,7 +168,7 @@ section p {
     left: 50px; /* Position 50px from the left edge */
     transform: translateY(-50%); /* Center the element vertically */
     z-index: 1; /* Ensure the section is above the particles */
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Align text to the left */
 }
 
 .photo-gallery {
