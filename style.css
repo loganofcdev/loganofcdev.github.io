@@ -35,9 +35,11 @@ html{
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the body to the full viewport height */
     margin: 0;
-    padding: 0;
-    height: 100vh; /* Full viewport height */
     position: relative; /* Set position relative to allow absolute positioning */
 }
 
@@ -144,23 +146,22 @@ photo-gallery {
 }
 
 section {
-  padding: 2rem;
-  background-color: #262626;
-  color: #ffffff;
-  margin: 2rem 0;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    background-color: #262626;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center; /* Center the text inside the section */
 }
 
 section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 section p {
-  font-size: 1.4rem;
-  color: #e0e0e0;
+    font-size: 1.4rem;
+    color: #e0e0e0;
 }
 
 #gallery {
