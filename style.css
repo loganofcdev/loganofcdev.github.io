@@ -301,15 +301,13 @@ img {
   height: auto; /* Maintain aspect ratio */
 }
 
-/* Container for the image links */
-.image-links-container {
+/* Container for the discord link */
+.discord-container {
   display: flex; /* Use flexbox */
   justify-content: space-between; /* Distribute space between the items */
   margin-bottom: 20px; /* Add some margin between the image links and other content */
+  bottom: 20px;
+  right: 15px;
 }
 
-/* Style for each image link */
-.image-links-container a {
-  display: inline-block; /* Ensure each link is displayed as a block */
-}
 
