@@ -74,14 +74,14 @@ h1 {
 
 
 nav {
-    background-color: #0808080;
+    background-color: #080808;
     padding: 10px;
     border-radius: 15px;
     margin-bottom: 20px;
     position: fixed;
     top: 0;
-    right: 0;
-    justify-content: center;
+    left: 50%; /* Position at 50% from the left edge */
+    transform: translateX(-50%); /* Move back 50% of its own width to center horizontally */
 }
 
 nav a {
