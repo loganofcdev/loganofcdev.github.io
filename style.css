@@ -279,3 +279,13 @@ section p {
   display: flex;
   flex-wrap: wrap;
 }
+
+  .time {
+    background-color: #0808080;
+    padding: 8px;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 16px; 
+    margin: 1px;
+}
+
