@@ -305,13 +305,14 @@ img {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  white-space: nowrap; /* Prevent wrapping */
 }
 
 .image-links-container a {
-  display: inline-block; /* Display the links inline */
+  display: inline-block;
   margin-left: 10px;
+  float: right; /* Float the links to the right */
 }
+
 
 
 
