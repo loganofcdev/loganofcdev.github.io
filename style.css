@@ -297,18 +297,8 @@ a {
 }
 
 img {
-  width: 50px; /* Adjust the size as needed */
+  width: 35px; /* Adjust the size as needed */
   height: auto; /* Maintain aspect ratio */
 }
 
-.image-links-container {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
 
-.image-links-container a {
-  display: inline-block;
-  margin-left: 10px;
-  float: left; /* Float the links to the left */
-}
