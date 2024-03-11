@@ -305,12 +305,14 @@ img {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  display: flex; /* Add flex display */
+  white-space: nowrap; /* Prevent wrapping */
 }
 
 .image-links-container a {
+  display: inline-block; /* Display the links inline */
   margin-left: 10px;
 }
+
 
 
 
