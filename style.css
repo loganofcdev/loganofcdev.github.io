@@ -310,10 +310,5 @@ img {
 .image-links-container a {
   display: inline-block;
   margin-left: 10px;
-  float: right; /* Float the links to the right */
+  float: left; /* Float the links to the left */
 }
-
-
-
-
-
