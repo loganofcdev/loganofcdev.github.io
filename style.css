@@ -287,5 +287,6 @@ section p {
     color: #fff;
     font-size: 16px; 
     margin: 1px;
+    z-index: 1px	  
 }
 
