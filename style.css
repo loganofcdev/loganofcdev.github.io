@@ -301,13 +301,16 @@ img {
   height: auto; /* Maintain aspect ratio */
 }
 
-/* Container for the discord link */
-.discord-container {
-  display: flex; /* Use flexbox */
-  justify-content: space-between; /* Distribute space between the items */
-  margin-bottom: 20px; /* Add some margin between the image links and other content */
+.image-links-container {
+  position: absolute;
   bottom: 20px;
-  right: 15px;
+  right: 20px;
+  display: flex; /* Add flex display */
 }
+
+.image-links-container a {
+  margin-left: 10px;
+}
+
 
 
