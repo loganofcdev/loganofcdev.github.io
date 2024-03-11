@@ -230,3 +230,24 @@ section p {
     border-top: 2px solid #2c3e50;
 }
 
+/* Style for the search bar */
+#gameSearch {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Set a maximum width to limit its size */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  background-color: #2c3e50;
+  color: #fff;
+  margin: 0 auto; /* Center the search bar horizontally */
+  display: block;
+  margin-bottom: 20px; /* Add margin to separate it from other elements */
+}
+
+/* Style for the game boxes container */
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
