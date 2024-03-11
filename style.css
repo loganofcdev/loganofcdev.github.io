@@ -71,3 +71,28 @@ h1 {
     transform: translate(-50%, -50%); /* Center the element */
     z-index: 1; /* Ensure the title is above the particles */
 }
+
+
+nav {
+    background-color: #3498db;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2c3e50;
+}
+
