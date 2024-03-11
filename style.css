@@ -81,6 +81,7 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
+    justify-content: center;
 }
 
 nav a {
