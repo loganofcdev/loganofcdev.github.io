@@ -37,7 +37,7 @@ navigator.getBattery().then(function (battery) {
 
     if (battery.level <= 0.2 && !battery.charging) {
       fullthing =
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>schedule</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time: </span> " +
         currentTime +
         " - " +
         "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>battery_1_bar</span> " +
@@ -45,7 +45,7 @@ navigator.getBattery().then(function (battery) {
         "%";
     } else if (battery.level > 0.2 && battery.level < 0.35 && !battery.charging) {
       fullthing =
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>schedule</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time: </span> " +
         currentTime +
         " - " +
         "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>battery_2_bar</span> " +
@@ -53,7 +53,7 @@ navigator.getBattery().then(function (battery) {
         "%";
     } else if (battery.level >= 0.35 && battery.level < 0.5 && !battery.charging) {
       fullthing =
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>schedule</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time: </span> " +
         currentTime +
         " - " +
         "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>battery_3_bar</span> " +
@@ -69,7 +69,7 @@ navigator.getBattery().then(function (battery) {
         "%";
     } else if (battery.level >= 0.65 && battery.level < 0.9 && !battery.charging) {
       fullthing =
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>schedule</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time:</span> " +
         currentTime +
         " - " +
         "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>battery_5_bar</span> " +
@@ -77,7 +77,7 @@ navigator.getBattery().then(function (battery) {
         "%";
     } else if (battery.level >= 0.9 && !battery.charging) {
       fullthing =
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>schedule</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time:</span> " +
         currentTime +
         " - " +
         "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>battery_full</span> " +
@@ -88,54 +88,54 @@ navigator.getBattery().then(function (battery) {
         "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time:</span> " +
         currentTime +
         " - " +
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent: %20</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent: </span> " +
         batteryLevel +
         "%";
     } else if (battery.level > 0.2 && battery.level < 0.35 && battery.charging) {
       fullthing =
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time: </span> " +
         currentTime +
         " - " +
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent: %30</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent: </span> " +
         batteryLevel +
         "%";
     } else if (battery.level >= 0.35 && battery.level < 0.5 && battery.charging) {
       fullthing =
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time: </span> " +
         currentTime +
         " - " +
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent: %50</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent: </span> " +
         batteryLevel +
         "%";
     } else if (battery.level >= 0.5 && battery.level < 0.65 && battery.charging) {
       fullthing =
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time: </span> " +
         currentTime +
         " - " +
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent: %60 </span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent:  </span> " +
         batteryLevel +
         "%";
     } else if (battery.level >= 0.65 && battery.level < 0.9 && battery.charging) {
       fullthing =
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time:</span> " +
         currentTime +
         " - " +
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent: %80</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent: </span> " +
         batteryLevel +
         "%";
     } else if (battery.level >= 0.9 && battery.level < 1 && battery.charging) {
       fullthing =
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Time:</span> " +
         currentTime +
         " - " +
-        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent: %90</span> " +
+        "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>Battery Percent: </span> " +
         batteryLevel +
         "%";
     } else if (battery.level === 1 && battery.charging) {
       fullthing =
         "<span class='material-symbols-outlined' style='vertical-align: text-bottom'>schedule</span> " +
         currentTime +
-        " - <span class='material-symbols-outlined' style='vertical-align: text-bottom'>Fully Charged: %100 </span> " +
+        " - <span class='material-symbols-outlined' style='vertical-align: text-bottom'>Fully Charged: </span> " +
         batteryLevel +
         "%";
     }
