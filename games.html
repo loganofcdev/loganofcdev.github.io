@@ -7,19 +7,11 @@
                 <link rel="stylesheet" href="style.css">
                         <style>
 
-form#uv-form {
-    /* Your search bar styles */
-    position: absolute;
-    top: 40px; /* Adjusted top value */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1; /* Ensure search bar is above game boxes */
-}
 
          #gameSearch {
     /* Your game search input styles */
     position: absolute;
-    top: 90px; /* Adjusted top value */
+    top: 100px; /* Adjusted top value */
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; /* Ensure game search input is above game boxes */
@@ -39,17 +31,8 @@ form#uv-form {
                   <a href="extra.html">Extra</a>
               </nav>
               
-                <!-- Search bar -->
-                <form id="uv-form">
-                    <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
-                    <input id="uv-address" type="text" placeholder="Search Proxy Or Paste URL" class="form__input"/>
-                </form>
+               
 
-                <div class="desc left-margin">
-                    <p id="uv-error"></p>
-                    <pre id="uv-error-code"></pre>
-                </div>
-<br>
 
                  <!-- Game Search Bar -->
     <input type="text" id="gameSearch" placeholder="Search games...">
