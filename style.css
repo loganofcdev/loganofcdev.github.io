@@ -34,8 +34,11 @@ html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body{
-  font:normal 75% Arial, Helvetica, sans-serif;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Set position relative to allow absolute positioning */
 }
 
 canvas{
@@ -60,14 +63,11 @@ canvas{
 /*---- other stuff ---- */
 
 h1 {
-
-h1 {
     font-size: 36px; /* Adjust the font size as needed */
     text-align: center;
-    margin-top: 20px; /* Optional: Add some space between the particles and the title */
-    color: white;	
-}
-	
-
-	
+    position: absolute;
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the element */
+    z-index: 1; /* Ensure the title is above the particles */
 }
