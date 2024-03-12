@@ -1,7 +1,12 @@
 document.addEventListener('keydown', function(event) {
     var key = event.key.toLowerCase();
     var sequenceInput = document.getElementById('sequence').value.toLowerCase();
-    var safePageURLInput = document.getElementById('safe-page-url').value;
+    var safePageURLInput = document.getElementById('safe-page-url').value.trim(); // Trim whitespace
+    // Check if the URL starts with "http://" or "https://"
+    if (!safePageURLInput.startsWith("http://") && !safePageURLInput.startsWith("https://")) {
+        // If it doesn't, prepend "https://"
+        safePageURLInput = "https://" + safePageURLInput;
+    }
 
     var currentIndex = sequenceInput.indexOf(key);
     
