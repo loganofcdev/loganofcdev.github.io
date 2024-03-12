@@ -199,13 +199,13 @@ section p {
 .game-box {
     width: 200px;
     height: 250px;
-    border: 2px solid #e9eef2;
+    border: 2px solid #242526;
     border-radius: 15px;
     position: relative;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
-    background-color: #2c3e50;
+    background-color: #242526;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -224,7 +224,7 @@ section p {
     width: 100%;
     height: 80%;
     object-fit: cover;
-    border-bottom: 2px solid #e9eef2;
+    border-bottom: 2px solid #242526;
 }
 
 .game-text {
