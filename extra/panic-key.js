@@ -1,6 +1,10 @@
+// Load saved panic configuration if available
+var savedConfig = JSON.parse(localStorage.getItem('panicConfig')) || {};
+var savedSequence = savedConfig.sequence || '';
+
 document.addEventListener('keydown', function(event) {
     var key = event.key.toLowerCase();
-    var sequenceInput = document.getElementById('sequence').value.toLowerCase();
+    var sequenceInput = document.getElementById('sequence').value.toLowerCase() || savedSequence;
     var safePageURLInput = document.getElementById('safe-page-url').value.trim(); // Trim whitespace
     // Check if the URL starts with "http://" or "https://"
     if (!safePageURLInput.startsWith("http://") && !safePageURLInput.startsWith("https://")) {
@@ -21,4 +25,15 @@ document.addEventListener('keydown', function(event) {
         // Reset sequence if the key pressed is not part of the sequence
         currentIndex = 0;
     }
+});
+
+// Save panic configuration locally
+document.getElementById('save-config').addEventListener('click', function() {
+    var sequenceInput = document.getElementById('sequence').value.toLowerCase();
+    var safePageURLInput = document.getElementById('safe-page-url').value.trim();
+    var config = {
+        sequence: sequenceInput,
+        safePageURL: safePageURLInput
+    };
+    localStorage.setItem('panicConfig', JSON.stringify(config));
 });
