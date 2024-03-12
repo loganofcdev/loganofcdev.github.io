@@ -1,6 +1,6 @@
         document.addEventListener('keydown', function(event) {
             var key = event.key.toLowerCase();
-            var sequence = '~';
+            var sequence = '`';
             var currentIndex = sequence.indexOf(key);
             
             if (currentIndex !== -1) {
