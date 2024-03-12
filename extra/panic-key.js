@@ -8,7 +8,6 @@
                 if (nextIndex === sequence.length) {
                     // Panic sequence detected
                     // Perform your panic action here
-                    alert('Panic mode activated! Redirecting to a safe page...');
                     window.location.href = 'classroom.google.com/'; // Change 'safe-page.html' to your safe page URL
                 }
             } else {
