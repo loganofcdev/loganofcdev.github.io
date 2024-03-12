@@ -6,5 +6,5 @@ https://tridentgames.lol/
 
 
 <a href="https://tridentgames.lol/">
-  <img src="img/tridentlogo2/">
+  <img src="img/tridentlogo2.png/">
 </a>
