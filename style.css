@@ -274,4 +274,18 @@ section p {
     z-index: 1px	  
 }
 
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
 
+::-webkit-scrollbar-track {
+    background: #0808080; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0808080; /* Thumb color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0808080; /* Thumb color on hover */
+}
