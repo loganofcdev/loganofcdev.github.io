@@ -1,60 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Apps | Trident </title>
-  <meta name="description" content="Trident is a unblocked games website that is very fun :).">
-  <meta name="author" content="loganofc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="style.css">
-  <link rel="icon" type="image/png" href="/img/tridentlogo2.png">
-  <style>
-    
-#time-clock {
-    position: absolute;
-    top: 100px; /* Adjust top position as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1; /* Ensure the time-clock is above particles */
-}
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Games | Trident </title>
+                <link rel="stylesheet" href="style.css">
+                        <style>
 
 
+  #gameSearch {
+            /* Your game search input styles */
+            position: fixed; /* Change from absolute to fixed */
+            top: 35px; /* Adjusted top value */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1; /* Ensure game search input is above game boxes */
+        }
+                  
+                                    
+                        </style>
+     
+            </head>
+            <body>
 
 
-    
-  </style>
-</head>
-<body>
+               
+              <nav>
+                  <a href="index">Home</a>
+                  <a href="games">Games</a>
+                  <a href="apps">Apps</a>
+                  <a href="extra">Extra</a>
+              </nav>
+              
+               
 
 
-  <nav>
-      <a href="index">Home</a>
-      <a href="games">Games</a>
-      <a href="apps">Apps</a>
-      <a href="extra">Extra</a>
-  </nav>
+                 <!-- Game Search Bar -->
+    <input type="text" id="gameSearch" placeholder="Search games...">
+    <div class="game-container" id="gameContainer">
+
+        <br>
+
+        <!-- Game boxes go here -->
+        <div class="game-container">
+          
+           <div class="game-box">
+                <a href="/apps/instagram" target="_blank">
+                    <img class="game-icon" src="/img/instagram.png">
+                    <div class="game-text">Instagram</div>
+                </a>
+            </div>
+          
+           
+
+        </div>
 
 
- <section id="gallery">
- <h2>Coming Soon...</h2>
-
-  </div>
-</section>
-
-  
- <!-- GitHub icon -->
-  <a href="https://github.com/loganofcdev/Trident/" style="width: 35px; height: auto; position: fixed; bottom: 20px; right: 20px;">
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWBJREFUSEu1lY1NxTAMhP02gUmATWASYBJgEmAS2AT6Vbno8temT6qlqmpi+3yX2L3EyXY5OX/MANxHBM9dev9GBM/38v2VnmGdWwA3EfGWkm4RBewhgTZ+I4CXiHg+IB8gH4s/cYX1AB5T5QfyZ9fXGqQGQJaf5I6+Twt1AMWGSjH8MBLixz7nxD4xrK1WA3ya5u/JWQmVvPftkuJ32wOopXGAPbm4DMTLOPSVhTOoAbLTXvYkmaSVdOuBO4BXUdCcAMDF5aV6CiwAqECHlx0mk+PWLdAZOMA1DDw+F+8ATvEagD9jmy+IA9Tde+QWDWMdgEaBhVvTmdU+Z+aNuHlNdRMIohsBpEM1PVnzZnNJHbe4IKNRoQmpEaCx4Ynq5mqq740K1qTnnjy9iQtLzi7b3riWPIziItAKUbIm+YiBAvyH02MjBs0EnWHgPupuP2D2R+vFRZv5Jx+YFq3r6QD/Wc9YGdHIjH4AAAAASUVORK5CYII=" alt="Trident GitHub">
-</a>
-
-<a href="https://discord.gg/TstWSmqu3c" style="width: 35px; height: auto; position: fixed; bottom: 20px; right: 45px;">
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASRJREFUSEvdldENwjAMRI9NYBOYBJgEmASYBJgENoE+KbZckxZa1B8sVa1qx5c728lME9ts4vz6f4C5pI2ka3miosvmH0/N53FdEu0l7UK2RwcAG8Dwn5sP1rWsBpCTD+mDraRTXFADeA7JmGJhsugDOBbNf8DQIUqVGdwbiqbrWJAWiwhAt8AgGwuGgq6sKSJATR4KRuEAgF0005qNxY4jxmX6BBD9l9L3JDBgvmvgzAYsWkdFTX+nKikCeIJCKXee1yHusNaeBCIRE5tlgAXDxX/80b4GGNtJrs4nBmMBqgy6zp9b00HrgoQULMZ448Pwx1b2IyMPmp2epvfb6CdKxFN8S07xSW6b6Lxw+o7pLBtzQDxF98QW9P832tgu8nWTS/QCEes+GbeWZcUAAAAASUVORK5CYII=" alt="Trident Discord">
-</a>
-  
-<a href="https://www.tiktok.com/@trident.games" style="width: 35px; height: auto; position: fixed; bottom: 20px; right: 67px;">
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQ1JREFUSEvFldERgkAMRJdK1E60ErUStRK1Eu1ES5E3c+eEcHcgHGM+YAYu2WSzLI0Wjmbh+poCcJV0CI29JW1KTc4FoDYAACWjBsBN0nFJAGpf2ss5BVJjglj32dJ1l8T9S1lNgAjUoezvAOsgyZUZ38t0F87sJXF+1AQcfISEODpKIbn0HZDXkWyKom0o7kUxBqAnpBTAy3VOEl0hxaEJBgGwACiw0oNjG7OswiZTNDXhLAAWyw6InAVUA8g5pd1R0YdSFPgdeI/Bb05mIT8DoGM6tEERAup4b6No1bkl+il60gsPsg5qE3Je5KnwIKOK5yaIxaIPRY9h6dgxlGX/YL6TKW6aoyz5fHGAD1TJQhlRqDJbAAAAAElFTkSuQmCC" alt="Trident Tiktok Account">
-</a>
-
-<script src="/extra/panic-key.js" defer></script>
-</body>
-</html>
+       
+                    
+   
+           
+              <script src="/js/gamesearch.js" defer></script>
+                <script src="/extra/panic-key.js" defer></script>
+            </body>
+            </html>
