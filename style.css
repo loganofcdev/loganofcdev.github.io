@@ -276,22 +276,45 @@ section p {
 
 /*--- Proxy css --- */
 
- #uv-form {
-        text-align: center;
-        z-index: 2; /* Ensure it's on top of the particles */
-    }
-    .form__input {
-        width: 300px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-    .desc {
-        margin-top: 20px;
-        text-align: center;
-    }
+#uv-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
+.form__input {
+  width: 300px; /* Adjust width as needed */
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
 
+.form__input:focus {
+  border-color: #007bff; /* Change focus color as needed */
+}
+
+.form__input::placeholder {
+  color: #aaa; /* Placeholder color */
+}
+
+.form__submit {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: #0056b3; /* Hover color */
+}
 
 ::-webkit-scrollbar {
     width: 10px; /* Set the width of the scrollbar */
