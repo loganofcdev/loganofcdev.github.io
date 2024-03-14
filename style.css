@@ -281,6 +281,7 @@ section p {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #1e1e1f;	
 }
 
 .form__input {
@@ -293,7 +294,7 @@ section p {
 }
 
 .form__input:focus {
-  border-color: #007bff; /* Change focus color as needed */
+  border-color: #292a2b; /* Change focus color as needed */
 }
 
 .form__input::placeholder {
@@ -312,7 +313,7 @@ section p {
 }
 
 .form__submit:hover {
-  background-color: #0056b3; /* Hover color */
+  background-color: #343638; /* Hover color */
 }
 
 
