@@ -281,7 +281,6 @@ section p {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #1e1e1f;	
 }
 
 .form__input {
@@ -291,6 +290,7 @@ section p {
   border: 2px solid #ccc;
   border-radius: 5px;
   outline: none;
+  background-color: #1e1e1f	
 }
 
 .form__input:focus {
