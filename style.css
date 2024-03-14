@@ -279,6 +279,12 @@ section p {
 #uv-form {
     text-align: center;
     margin-bottom: 20px;
+	 text-align: center;
+       top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1; /* Ensure it's on top of the particles */
 }
 
 #uv-address {
