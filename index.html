@@ -44,7 +44,56 @@
       <a href="apps">Apps</a>
       <a href="extra">Extra</a>
   </nav>
+<h1 id="welcomeMessage">Welcome to unblocked games</h1>
+<p>Refresh the page to see a new random word:</p>
+<div id="randomWord">Random Word</div>
 
+<script>
+// Array of words
+const words = [
+  "apple", "banana", "orange", "strawberry", "grape", "kiwi", "pineapple", "blueberry", "peach", "watermelon",
+  "carrot", "broccoli", "potato", "cucumber", "tomato", "onion", "lettuce", "spinach", "pepper", "corn",
+  "dog", "cat", "rabbit", "hamster", "turtle", "bird", "fish", "snake", "lizard", "frog"
+];
+
+// Function to get a random word
+function getRandomWord() {
+  return words[Math.floor(Math.random() * words.length)];
+}
+
+// Update the welcome message on page load
+document.addEventListener("DOMContentLoaded", function() {
+  const welcomeMessageElement = document.getElementById("welcomeMessage");
+  const originalMessage = welcomeMessageElement.textContent;
+  welcomeMessageElement.textContent = "";
+  let i = 0;
+  const interval = setInterval(() => {
+    if (i <= originalMessage.length) {
+      welcomeMessageElement.textContent = originalMessage.slice(0, i);
+      i++;
+    } else {
+      clearInterval(interval);
+      setTimeout(() => {
+        const newText = "Welcome To Trident Games..";
+        let j = 0;
+        const secondInterval = setInterval(() => {
+          if (j <= newText.length) {
+            welcomeMessageElement.textContent = newText.slice(0, j);
+            j++;
+          } else {
+            clearInterval(secondInterval);
+          }
+        }, 100);
+      }, 1000); // Delay before showing the second message
+    }
+  }, 100);
+});
+
+// Update the random word when the page is clicked
+document.addEventListener("click", function() {
+  const randomWordElement = document.getElementById("randomWord");
+  randomWordElement.textContent = getRandomWord();
+});
 
  <section id="gallery">
   <h2>PATCH NOTES</h2>
