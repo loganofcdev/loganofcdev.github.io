@@ -277,11 +277,10 @@ section p {
 /*--- Proxy css --- */
 
 #uv-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .form__input {
@@ -308,13 +307,14 @@ section p {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 5px;
-  margin-left: 10px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
 .form__submit:hover {
   background-color: #0056b3; /* Hover color */
 }
+
 
 ::-webkit-scrollbar {
     width: 10px; /* Set the width of the scrollbar */
