@@ -174,14 +174,15 @@
 
 
 
+
 <audio id="audioPlayer" autoplay loop>
-  <source src="/extra/90mh.mp3" type="audio/mpeg">
+  <source src="/extra/90mh.pm3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
 <div class="music-player">
   <button id="playPauseBtn" class="play">
-    <img id="playPauseImg" src="/img/play-icon.svg" alt="Play">
+    <img id="playPauseImg" src="/img/play-icon.svg" alt="Play/Pause">
   </button>
   <button id="stopBtn">Stop</button>
 </div>
@@ -191,7 +192,6 @@
   const playPauseBtn = document.getElementById('playPauseBtn');
   const playPauseImg = document.getElementById('playPauseImg');
   const stopBtn = document.getElementById('stopBtn');
-  const musicPlayer = document.querySelector('.music-player');
 
   playPauseBtn.addEventListener('click', function() {
     if (audioPlayer.paused) {
