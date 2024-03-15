@@ -15,6 +15,12 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; /* Ensure game search input is above game boxes */
+
+            #gameContainer {
+    max-height: calc(100vh - 50px); /* Adjust 50px to match your navigation bar height */
+    overflow-y: auto; /* Add scrollbar when content overflows */
+}
+
 }             
                                     
                         </style>
