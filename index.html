@@ -180,7 +180,6 @@
 </audio>
 
 <div class="music-player">
-  <button id="closeBtn" class="close">X</button>
   <button id="playPauseBtn" class="play">
     <img id="playPauseImg" src="/img/play-icon.svg" alt="Play">
   </button>
@@ -192,7 +191,6 @@
   const playPauseBtn = document.getElementById('playPauseBtn');
   const playPauseImg = document.getElementById('playPauseImg');
   const stopBtn = document.getElementById('stopBtn');
-  const closeBtn = document.getElementById('closeBtn');
   const musicPlayer = document.querySelector('.music-player');
 
   playPauseBtn.addEventListener('click', function() {
@@ -209,10 +207,6 @@
     audioPlayer.pause();
     audioPlayer.currentTime = 0;
     playPauseImg.src = '/img/play-icon.svg'; // Change to play icon when stopped
-  });
-
-  closeBtn.addEventListener('click', function() {
-    musicPlayer.style.display = 'none'; // Hide the music player
   });
 </script>
 
