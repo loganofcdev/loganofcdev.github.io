@@ -189,7 +189,12 @@ section p {
 
 /* ---- game box css and extra ----*/
 
-
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
 
 .game-box {
