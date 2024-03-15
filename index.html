@@ -182,7 +182,7 @@
 
 <div class="music-player">
   <button id="playPauseBtn" class="play">
-    <img id="playPauseImg" src="/img/play-icon.svg" alt="Play/Pause">
+    <img id="playPauseImg" src="/img/play-icon.png" alt="Play/Pause">
   </button>
   <button id="stopBtn">Stop</button>
 </div>
@@ -196,17 +196,17 @@
   playPauseBtn.addEventListener('click', function() {
     if (audioPlayer.paused) {
       audioPlayer.play();
-      playPauseImg.src = '/img/pause-icon.svg'; // Change to pause icon when playing
+      playPauseImg.src = '/img/pause-icon.png'; // Change to pause icon when playing
     } else {
       audioPlayer.pause();
-      playPauseImg.src = '/img/play-icon.svg'; // Change to play icon when paused
+      playPauseImg.src = '/img/play-icon.png'; // Change to play icon when paused
     }
   });
 
   stopBtn.addEventListener('click', function() {
     audioPlayer.pause();
     audioPlayer.currentTime = 0;
-    playPauseImg.src = '/img/play-icon.svg'; // Change to play icon when stopped
+    playPauseImg.src = '/img/play-icon.png'; // Change to play icon when stopped
   });
 </script>
 
