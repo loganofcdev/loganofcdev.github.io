@@ -60,6 +60,48 @@
 /* Style the audio player */
 #audioPlayer {
   display: none; /* Hide the default audio player */
+
+  /* Language Selector Button */
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.language-button img {
+  width: 35px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  padding: 8px 0;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+  color: #000;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.language-selector:hover .dropdown-content {
+  display: block;
+}
+
 }
     
   </style>
@@ -84,6 +126,16 @@
       <a href="extra">Extra</a>
   </nav>
 
+<!-- Language Selector Button -->
+<div class="language-selector">
+  <button class="language-button">
+    <img src="/img/language.png" alt="Language">
+  </button>
+  <div class="dropdown-content">
+    <a href="/index">English</a>
+    <a href="/es/">Español</a>
+  </div>
+</div>
   
  <section id="gallery">
   <h2>PATCH NOTES</h2>
