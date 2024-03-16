@@ -1,0 +1,93 @@
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Aplicaciones | Tridente</title>
+                <link rel="stylesheet" href="/style.css">
+                        <style>
+
+
+  #gameSearch {
+            /* Your game search input styles */
+            position: fixed; /* Change from absolute to fixed */
+            top: 60px; /* Adjusted top value */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1; /* Ensure game search input is above game boxes */
+        }
+                  
+
+  
+                        </style>
+     
+            </head>
+            <body>
+
+
+               
+              <nav>
+                  <a href="https://tridentgames.lol/es/">Hogar</a>
+                  <a href="/es/games">Juegos</a>
+                  <a href="/es/apps">Aplicaciones</a>
+                  <a href="/es/extra">Aplicaciones</a>
+              </nav>
+              
+
+                 <!-- Game Search Bar -->
+    <input type="text" id="gameSearch" placeholder="Buscar aplicaciones...">
+    <div class="game-container" id="gameContainer">
+
+        <br>
+
+        <!-- Game boxes go here -->
+        <div class="game-container">
+          
+           <div class="game-box">
+                <a href="/apps/instagram" target="_blank">
+                    <img class="game-icon" src="/img/instagram.png">
+                    <div class="game-text">Instagram</div>
+                </a>
+            </div>
+
+                          <div class="game-box">
+                <a href="/apps/youtube" target="_blank">
+                    <img class="game-icon" src="/img/youtube.png">
+                    <div class="game-text">Youtube</div>
+                </a>
+            </div>
+
+                            <div class="game-box">
+                <a href="/apps/shuttle-tv" target="_blank">
+                    <img class="game-icon" src="/img/shuttle.png">
+                    <div class="game-text">Shuttle TV </div>
+                </a>
+            </div>
+
+                             <div class="game-box">
+                <a href="/apps/discord" target="_blank">
+                    <img class="game-icon" src="/img/discord.png">
+                    <div class="game-text">Discord</div>
+                </a>
+            </div>
+
+                                 <div class="game-box">
+                <a href="/apps/tiktok" target="_blank">
+                    <img class="game-icon" src="/img/tiktok.png">
+                    <div class="game-text">Tiktok</div>
+                </a>
+            </div>
+          
+           
+
+        </div>
+
+
+       
+                    
+   
+           
+              <script src="/js/gamesearch.js" defer></script>
+                <script src="/extra/panic-key.js" defer></script>
+            </body>
+            </html>
