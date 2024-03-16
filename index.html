@@ -63,19 +63,22 @@
 
 /* Language Selector Button */
 .language-selector {
-  position: relative;
-  display: inline-block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 .language-button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
 }
 
 .language-button img {
-  width: 35px; /* Adjust size as needed */
-  height: auto;
+  width: 100%; /* Ensure the image fills the button */
+  height: 100%; /* Ensure the image fills the button */
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -101,6 +104,7 @@
 .language-selector:hover .dropdown-content {
   display: block;
 }
+
 
 
     
