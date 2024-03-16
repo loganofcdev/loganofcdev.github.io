@@ -61,7 +61,7 @@
 #audioPlayer {
   display: none; /* Hide the default audio player */
 
-/* Language Selector Button */
+/* Language Selector Dropdown */
 .language-selector {
   position: fixed;
   top: 20px;
@@ -72,16 +72,13 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.language-button img {
   width: 50px; /* Adjust size as needed */
   height: 50px; /* Adjust size as needed */
 }
 
-.language-button img {
-  width: 100%; /* Ensure the image fills the button */
-  height: 100%; /* Ensure the image fills the button */
-}
-
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -92,7 +89,6 @@
   border-radius: 5px;
 }
 
-/* Dropdown Links */
 .dropdown-content a {
   color: #000;
   padding: 8px 12px;
@@ -100,10 +96,11 @@
   display: block;
 }
 
-/* Show the dropdown menu on hover */
+/* Show the dropdown menu on button hover */
 .language-selector:hover .dropdown-content {
   display: block;
 }
+
 
 
 
