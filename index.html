@@ -63,7 +63,7 @@
 
 }
 
-    /* Dropdown container */
+   /* Dropdown container */
 .nav-item.dropdown {
     position: relative;
 }
@@ -72,6 +72,8 @@
 .dropdown-menu {
     display: none;
     position: absolute;
+    top: 100%; /* Position below the parent */
+    right: 0; /* Align to the right */
     z-index: 1000; /* Ensure the dropdown is on top */
     background-color: #fff; /* Background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
@@ -103,6 +105,7 @@
     border-top: 1px solid #ccc; /* Divider line */
     margin: 5px 0; /* Margin */
 }
+
 
   </style>
 </head>
