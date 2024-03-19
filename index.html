@@ -61,6 +61,48 @@
 #audioPlayer {
   display: none; /* Hide the default audio player */
 
+}
+
+    /* Dropdown container */
+.nav-item.dropdown {
+    position: relative;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1000; /* Ensure the dropdown is on top */
+    background-color: #fff; /* Background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 0; /* Padding */
+}
+
+/* Show dropdown menu when parent is hovered */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown items */
+.dropdown-item {
+    display: block;
+    padding: 10px 20px; /* Padding */
+    text-decoration: none; /* Remove default link decoration */
+    color: #333; /* Text color */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+/* Divider */
+.dropdown-divider {
+    border-top: 1px solid #ccc; /* Divider line */
+    margin: 5px 0; /* Margin */
+}
 
   </style>
 </head>
