@@ -20,48 +20,7 @@
 }
     
 
-/* Style the music player container */
-.music-player {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
 
-/* Style the music player container */
-.music-player {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background-color: #262626;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Style the play/pause and stop buttons */
-.music-player button {
-  padding: 5px 10px;
-  margin-right: 5px;
-  border: none;
-  background-color: #262626;
-  color: #fff;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.music-player button:hover {
-  background-color: #383736;
-}
-
-/* Style the audio player */
-#audioPlayer {
-  display: none; /* Hide the default audio player */
-
-}
 
 /* Dropdown container */
 .nav-item.dropdown {
@@ -271,37 +230,6 @@
 
 
 
-<audio id="audioPlayer" autoplay loop>
-  <source src="/extra/playboicarti.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-<div class="music-player">
-  <button id="playPauseBtn" class="play">Play/Pause</button>
-  <button id="stopBtn">Stop</button>
-</div>
-
-<script>
-  const audioPlayer = document.getElementById('audioPlayer');
-  const playPauseBtn = document.getElementById('playPauseBtn');
-  const stopBtn = document.getElementById('stopBtn');
-
-  playPauseBtn.addEventListener('click', function() {
-    if (audioPlayer.paused) {
-      audioPlayer.play();
-      playPauseBtn.textContent = 'Pause';
-    } else {
-      audioPlayer.pause();
-      playPauseBtn.textContent = 'Play';
-    }
-  });
-
-  stopBtn.addEventListener('click', function() {
-    audioPlayer.pause();
-    audioPlayer.currentTime = 0;
-    playPauseBtn.textContent = 'Play';
-  });
-</script>
 
 <script src="/extra/panic-key.js" defer></script>
 <script src="/js/nowgghome.js" defer></script>
