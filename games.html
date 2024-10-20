@@ -12,31 +12,92 @@
 
 
 #gameSearch {
-    /* Your game search input styles */
-    position: absolute; /* Change from fixed to relative or remove this line */
-    top: 10px; /* Adjusted top value */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1; /* Ensure game search input is above game boxes */
+    /* Ensure the body takes the full height */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
-            #gameContainer {
-    max-height: calc(100vh - 50px); /* Adjust 50px to match your navigation bar height */
-    overflow-y: auto; /* Add scrollbar when content overflows */
-}
-            
-#container-5da9922e2c5a2362a25cae6d715431b7 {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 50px; /* Set the desired width */
-    height: 50px; /* Set the desired height */
-    z-index: 1000; /* Ensure it appears on top */
-    background-color: transparent; /* Adjust as needed */
-    margin: 0 auto;
-    right: 0;
-}
-           
-                                    
+        /* Navigation bar styling */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Game container styling */
+        .game-container {
+            flex-grow: 1; /* Ensure the container takes up remaining space */
+            overflow-y: auto; /* Enable vertical scrolling */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Align items to the center */
+            padding: 20px;
+        }
+
+        /* Game box styling */
+        .game-box {
+            width: 150px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            background-color: #fff;
+        }
+
+        .game-box:hover {
+            transform: scale(1.05);
+        }
+
+        .game-icon {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .game-text {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Game search input styling */
+        #gameSearch {
+            position: sticky; /* Keeps the search bar visible as you scroll */
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            width: 80%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            z-index: 1;
+        }
+
+        /* Fixed position container styling */
+        #container-5da9922e2c5a2362a25cae6d715431b7 {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            z-index: 1000;
+            background-color: transparent;
+            margin: 0 auto;
+            right: 0;
+        }
                         </style>
    
 
