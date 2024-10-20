@@ -1,148 +1,244 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games | Trident</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        #gameSearch {
-            position: absolute;
-            top: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
-        }
+         <!DOCTYPE html>
+            <html lang="en">
+            <head>
 
-        #gameContainer {
-            max-height: calc(100vh - 50px); /* Adjust 50px to match your navigation bar height */
-            overflow-y: auto; /* Add scrollbar when content overflows */
-        }
+                        
+                        
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Games | Trident </title>
+                <link rel="stylesheet" href="style.css">
+                        <style>
 
-        #container-5da9922e2c5a2362a25cae6d715431b7 {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 50px;
-            z-index: 1000;
-            background-color: transparent;
-            margin: 0 auto;
-            right: 0;
-        }
 
-        .game-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
+#gameSearch {
+    /* Your game search input styles */
+    position: absolute; /* Change from fixed to relative or remove this line */
+    top: 30px; /* Adjusted top value */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure game search input is above game boxes */
 
-        .game-box {
-            width: 200px;
-            margin: 10px;
-        }
+            #gameContainer {
+    max-height: calc(100vh - 50px); /* Adjust 50px to match your navigation bar height */
+    overflow-y: auto; /* Add scrollbar when content overflows */
+}
+            
+#container-5da9922e2c5a2362a25cae6d715431b7 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    z-index: 1000; /* Ensure it appears on top */
+    background-color: transparent; /* Adjust as needed */
+    margin: 0 auto;
+    right: 0;
+}
 
-        /* Button styles */
-        .pagination {
-            text-align: center;
-            margin-top: 20px;
-        }
+    .next-page-btn {
+    position: fixed;
+    bottom: 20px; /* Adjust the bottom value as needed */
+    right: 20px;  /* Align the button towards the right */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Make sure the button stays above other content */
+}
 
-        .pagination button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
+.next-page-btn:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
 
-        .pagination button:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-<body>
+           
+                        </style>
+   
 
-    <nav>
-        <a href="index">Home</a>
-        <a href="games">Games</a>
-        <a href="apps">Apps</a>
-        <a href="extra">Extra</a>
-    </nav>
+                        <script type='text/javascript' src='//pl24737206.cpmrevenuegate.com/6a/94/66/6a946602494d02e5c48c07a3319a25f0.js'></script>
+                        
+            </head>
+            <body>
 
-    <!-- Game Search Bar -->
+
+               
+              <nav>
+                  <a href="index">Home</a>
+                  <a href="games">Games</a>
+                  <a href="apps">Apps</a>
+                  <a href="extra">Extra</a>
+              </nav>
+              
+               
+
+
+                 <!-- Game Search Bar -->
     <input type="text" id="gameSearch" placeholder="Search games...">
-    
-    <!-- Game Container -->
     <div class="game-container" id="gameContainer">
+
+        <br>
+
         <!-- Game boxes go here -->
-        <div class="game-box">
-            <a href="/games/doodle-baseball" target="_blank">
-                <img class="game-icon" src="/img/doodle-baseball.png">
-                <div class="game-text">Doodle Baseball</div>
-            </a>
+        <div class="game-container">
+          
+           <div class="game-box">
+                <a href="/games/doodle-baseball" target="_blank">
+                    <img class="game-icon" src="/img/doodle-baseball.png">
+                    <div class="game-text">Doodle Baseball</div>
+                </a>
+            </div>
+            
+                    <div class="game-box">
+                <a href="/games/1v1-lol" target="_blank">
+                    <img class="game-icon" src="/img/1v1lol.png">
+                    <div class="game-text">1v1.lol</div>
+                </a>
+            </div>
+
+              <div class="game-box">
+                  <a href="/games/retro-bowl" target="_blank">
+                      <img class="game-icon" src="/img/retro-bowl.png">
+                      <div class="game-text">Retro Bowl</div>
+                  </a>
+              </div>
+
+            <div class="game-box">
+                <a href="/games/slope" target="_blank">
+                    <img class="game-icon" src="/img/slope.jfif">
+                    <div class="game-text">Slope</div>
+                </a>
+            </div>
+
+            <div class="game-box">
+                <a href="/games/run3" target="_blank">
+                    <img class="game-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxTmCb9hNOrDPBr5qg-XrwmY1vBLo4cMyqVGugDEuUhQ&s">
+                    <div class="game-text">RUN 3</div>
+                </a>
+            </div>
+                    
+
+            <div class="game-box">
+                <a href="/games/stack" target="_blank">
+                    <img class="game-icon" src="https://play-lh.googleusercontent.com/WRlGQXa9Pav7YZPW-P5X8PAga0lF2T1BAzmasxB9qV_1_om5DgmMbxOFo2SK8ZN5K5k">
+                    <div class="game-text">Stack</div>
+                </a>
+            </div>
+
+            <div class="game-box">
+                <a href="/games/snow-rider-3d" target="_blank">
+                    <img class="game-icon" src="https://play-lh.googleusercontent.com/oOjRu90evRPHmfJ4cQvV04KWK-5pilJSNCv2H6Q1Ue6G_fI9D-Qw2aRgXsMopx3IGIE=w240-h480-rw">
+                    <div class="game-text">Snow Rider 3D</div>
+                </a>
+            </div>
+
+                   <div class="game-box">
+                <a href="/games/basket-random" target="_blank">
+                    <img class="game-icon" src="/img/basket-random.jpg">
+                    <div class="game-text">Basket Random</div>
+                </a>
+            </div>
+
+                 <div class="game-box">
+                <a href="/games/boxing-random" target="_blank">
+                    <img class="game-icon" src="/img/boxing-random.png">
+                    <div class="game-text">Boxing Random</div>
+                </a>
+            </div>
+
+                     <div class="game-box">
+                <a href="/games/clicker-heroes" target="_blank">
+                    <img class="game-icon" src="/img/clickerheroes.jpg">
+                    <div class="game-text">Clicker Heroes</div>
+                </a>
+            </div>
+                        <div class="game-box">
+                <a href="/games/happy-wheels" target="_blank">
+                    <img class="game-icon" src="/img/happy-wheels.png">
+                    <div class="game-text">Happy Wheels</div>
+                </a>
+            </div>
+
+                        <div class="game-box">
+                <a href="/games/fnaf" target="_blank">
+                    <img class="game-icon" src="/img/fnaf.png">
+                    <div class="game-text">Five Nights At Freddy's (FNAF)</div>
+                </a>
+            </div>
+
+                       <div class="game-box">
+                <a href="/games/baldi-basics" target="_blank">
+                    <img class="game-icon" src="/img/baldi-basics.png">
+                    <div class="game-text">Baldi's Basic's</div>
+                </a>
+            </div>
+
+                       <div class="game-box">
+                <a href="/games/cookie-clicker" target="_blank">
+                    <img class="game-icon" src="/img/cookie-clicker.png">
+                    <div class="game-text">Cookie Clicker</div>
+                </a>
+            </div>
+
+                           <div class="game-box">
+                <a href="/games/time-shooter-3" target="_blank">
+                    <img class="game-icon" src="/img/time-shooter3.png">
+                    <div class="game-text">Time Shooter 3: SWAT</div>
+                </a>
+            </div>
+
+                         <div class="game-box">
+                <a href="/games/just-fall-lol" target="_blank">
+                    <img class="game-icon" src="/img/just-fall.jpg">
+                    <div class="game-text">JustFall.lol</div>
+                </a>
+            </div>
+
+                      <div class="game-box">
+                <a href="/games/minecraft" target="_blank">
+                    <img class="game-icon" src="/img/minecraft.png">
+                    <div class="game-text">Minecraft</div>
+                </a>
+            </div>    
+
+                          <div class="game-box">
+                <a href="/games/soccer-random" target="_blank">
+                    <img class="game-icon" src="/img/soccer-random.png">
+                    <div class="game-text">Soccer Random</div>
+                </a>
+            </div>    
+                    
+                           <div class="game-box">
+                <a href="/games/volley-random" target="_blank">
+                    <img class="game-icon" src="/img/volley-random.png">
+                    <div class="game-text">Volley Random</div>
+                </a>
+            </div>    
+
+                                   <div class="game-box">
+                <a href="/games/subway-surfers-tokyo" target="_blank">
+                    <img class="game-icon" src="/img/subway-surfers-tokyo.png">
+                    <div class="game-text">Subway Surfers Tokyo</div>
+                </a>
+            </div>    
+
+              
+           
+
         </div>
-        <!-- Add the rest of the game boxes similarly -->
+
 
         <!-- Next Page Button -->
-        <div class="pagination">
-            <button id="nextPageBtn">Next Page</button>
-        </div>
-    </div>
+<a href="/games/page2">
+    <button class="next-page-btn">Next Page ></button>
+</a>
 
-    <script>
-        // JavaScript to handle pagination (example logic)
-        let currentPage = 1;
-        const gamesPerPage = 10; // Number of games per page
-
-        // Function to load games based on the page number
-        function loadGames(page) {
-            // Assuming you have a list of all games stored somewhere
-            const allGames = [
-                // An array of objects with game information (you would replace this with your actual data)
-                { name: 'Doodle Baseball', img: '/img/doodle-baseball.png', link: '/games/doodle-baseball' },
-                { name: '1v1.lol', img: '/img/1v1lol.png', link: '/games/1v1-lol' },
-                // Add all your games here
-            ];
-
-            const startIndex = (page - 1) * gamesPerPage;
-            const endIndex = startIndex + gamesPerPage;
-            const gamesToShow = allGames.slice(startIndex, endIndex);
-
-            const gameContainer = document.getElementById('gameContainer');
-            gameContainer.innerHTML = ''; // Clear previous content
-
-            gamesToShow.forEach(game => {
-                const gameBox = document.createElement('div');
-                gameBox.classList.add('game-box');
-                gameBox.innerHTML = `
-                    <a href="${game.link}" target="_blank">
-                        <img class="game-icon" src="${game.img}">
-                        <div class="game-text">${game.name}</div>
-                    </a>
-                `;
-                gameContainer.appendChild(gameBox);
-            });
-
-            // Re-append the pagination buttons after games are loaded
-            const pagination = document.createElement('div');
-            pagination.classList.add('pagination');
-            pagination.innerHTML = `<button id="nextPageBtn">Next Page</button>`;
-            gameContainer.appendChild(pagination);
-        }
-
-        // Event listener for the "Next Page" button
-        document.addEventListener('click', function (e) {
-            if (e.target && e.target.id === 'nextPageBtn') {
-                currentPage++;
-                loadGames(currentPage);
-            }
-        });
-
-        // Load the first page of games initially
-        loadGames(currentPage);
-    </script>
-
-</body>
-</html>
+                    
+   
+           
+              <script src="/js/gamesearch.js" defer></script>
+                <script src="/extra/panic-key.js" defer></script>
+            </body>
+            </html>
